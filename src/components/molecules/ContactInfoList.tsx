@@ -1,17 +1,18 @@
 import React from 'react';
 import { Mail, MapPin } from 'lucide-react';
+import { profile } from '../../data/portfolio';
 
 const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'sergioruiz456@gmail.com',
-    href: 'sergioruiz456@gmail.com'
+    value: profile.email,
+    href: `mailto:${profile.email}`
   },
   {
     icon: MapPin,
     label: 'Ubicación',
-    value: 'Bogotá, Colombia',
+    value: profile.location,
     href: '#'
   }
 ];
