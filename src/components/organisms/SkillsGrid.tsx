@@ -1,58 +1,104 @@
 import React from 'react';
 import SkillIcon from '../atoms/SkillIcon';
-import { FaNodeJs, FaPython, FaDocker, FaGitAlt, FaGithub, FaBitbucket, FaCode } from 'react-icons/fa';
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiSass, SiMysql, SiMongodb, SiDjango, SiExpress, SiGithubactions, SiJavascript } from 'react-icons/si';
+import { 
+  FaNodeJs, FaPython, FaDocker, FaGitAlt, FaGithub, FaCode, FaPhp, FaReact 
+} from 'react-icons/fa';
+import { 
+  SiTypescript, SiTailwindcss, SiMysql, SiMongodb, SiDjango, 
+  SiGithubactions, SiJavascript, SiNestjs, SiVite, SiPostgresql,
+  SiMariadb, SiKubernetes, SiGooglecloud, SiJest, SiCypress, SiSwagger
+} from 'react-icons/si';
+import { skillCategories } from '../../data/portfolio';
 
-const SkillsGrid: React.FC = () => (
-  <div className="mb-16">
-    <div className="flex items-center justify-start mb-8">
-      <FaCode className="w-7 h-7 text-indigo-600 dark:text-indigo-400 mr-3" />
-      <h2 className="text-3xl md:text-3xl font-bold text-gray-900 dark:text-white">Lenguajes y Tecnología</h2>
-    </div>
-    <div className="grid md:grid-cols-2 gap-8">
-      <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:border-indigo-400 dark:hover:border-indigo-400 hover:shadow-xl">
-        <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Backend</h3>
-        <div className="flex flex-wrap gap-4">
-          <SkillIcon label="TypeScript" icon={<SiTypescript className="text-blue-700" />} />
-          <SkillIcon label="NodeJS" icon={<FaNodeJs className="text-green-600" />} />
-          <SkillIcon label="Express" icon={<SiExpress className="text-gray-700" />} />
-          <SkillIcon label="Python" icon={<FaPython className="text-yellow-700" />} />
-          <SkillIcon label="Django" icon={<SiDjango className="text-green-900" />} />
+// Mapeo de nombres de iconos a componentes de react-icons
+const iconMap: Record<string, React.ReactElement> = {
+  FaPython: <FaPython className="text-yellow-700" />,
+  SiDjango: <SiDjango className="text-green-900" />,
+  SiNestjs: <SiNestjs className="text-red-600" />,
+  FaNodeJs: <FaNodeJs className="text-green-600" />,
+  FaPhp: <FaPhp className="text-indigo-600" />,
+  FaReact: <FaReact className="text-blue-500" />,
+  SiJavascript: <SiJavascript className="text-yellow-400" />,
+  SiTypescript: <SiTypescript className="text-blue-700" />,
+  SiVite: <SiVite className="text-purple-600" />,
+  SiTailwindcss: <SiTailwindcss className="text-teal-400" />,
+  SiPostgresql: <SiPostgresql className="text-blue-600" />,
+  SiMysql: <SiMysql className="text-blue-600" />,
+  SiMariadb: <SiMariadb className="text-blue-800" />,
+  SiMongodb: <SiMongodb className="text-green-700" />,
+  FaDocker: <FaDocker className="text-blue-500" />,
+  SiKubernetes: <SiKubernetes className="text-blue-600" />,
+  SiGooglecloud: <SiGooglecloud className="text-blue-600" />,
+  SiGithubactions: <SiGithubactions className="text-gray-900 dark:text-white" />,
+  FaGitAlt: <FaGitAlt className="text-orange-600" />,
+  FaGithub: <FaGithub className="text-gray-900 dark:text-white" />,
+  SiJest: <SiJest className="text-red-600" />,
+  SiCypress: <SiCypress className="text-gray-700" />,
+  SiSwagger: <SiSwagger className="text-green-600" />
+};
+
+const SkillsGrid: React.FC = () => {
+  // Dividir las categorías en dos columnas
+  const leftCategories = ['Backend', 'Bases de datos', 'DevOps / CI/CD', 'Testing'];
+  const rightCategories = ['Frontend', 'Control de versiones', 'Herramientas'];
+
+  const getSkillsByCategories = (categoryNames: string[]) => {
+    return skillCategories.filter(cat => categoryNames.includes(cat.name));
+  };
+
+  return (
+    <div className="mb-16">
+      <div className="flex items-center justify-start mb-8">
+        <FaCode className="w-7 h-7 text-indigo-600 dark:text-indigo-400 mr-3" />
+        <h2 className="text-3xl md:text-3xl font-bold text-gray-900 dark:text-white">Lenguajes y Tecnología</h2>
+      </div>
+      <div className="grid md:grid-cols-2 gap-8">
+        {/* Columna Izquierda */}
+        <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:border-indigo-400 dark:hover:border-indigo-400 hover:shadow-xl">
+          {getSkillsByCategories(leftCategories).map((category, idx) => (
+            <div key={idx} className={idx > 0 ? 'mt-8' : ''}>
+              <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">{category.name}</h3>
+              <div className="flex flex-wrap gap-4">
+                {category.skills.map((skill, skillIdx) => (
+                  <SkillIcon
+                    key={skillIdx}
+                    label={skill.name}
+                    icon={
+                      skill.iconComponent 
+                        ? iconMap[skill.iconComponent] || <span>{skill.icon || '📦'}</span>
+                        : <span className="text-lg">{skill.icon || '📦'}</span>
+                    }
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-        <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mt-8 mb-4">Bases de datos</h3>
-        <div className="flex flex-wrap gap-4">
-          <SkillIcon label="MySQL" icon={<SiMysql className="text-blue-600" />} />
-          <SkillIcon label="MongoDB" icon={<SiMongodb className="text-green-700" />} />
-        </div>
-        <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mt-8 mb-4">DevOps / CI/CD</h3>
-        <div className="flex flex-wrap gap-4">
-          <SkillIcon label="Docker" icon={<FaDocker className="text-blue-500" />} />
-          <SkillIcon label="GitHub Actions" icon={<SiGithubactions className="text-gray-900" />} />
-          <SkillIcon label="AWS" icon={<span className="text-lg">☁️</span>} />
+
+        {/* Columna Derecha */}
+        <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:border-indigo-400 dark:hover:border-indigo-400 hover:shadow-xl">
+          {getSkillsByCategories(rightCategories).map((category, idx) => (
+            <div key={idx} className={idx > 0 ? 'mt-8' : ''}>
+              <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">{category.name}</h3>
+              <div className="flex flex-wrap gap-4">
+                {category.skills.map((skill, skillIdx) => (
+                  <SkillIcon
+                    key={skillIdx}
+                    label={skill.name}
+                    icon={
+                      skill.iconComponent 
+                        ? iconMap[skill.iconComponent] || <span>{skill.icon || '📦'}</span>
+                        : <span className="text-lg">{skill.icon || '📦'}</span>
+                    }
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:border-indigo-400 dark:hover:border-indigo-400 hover:shadow-xl">
-        <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">Frontend</h3>
-        <div className="flex flex-wrap gap-4">
-          <SkillIcon label="JavaScript" icon={<SiJavascript className="text-yellow-400" />} />
-          <SkillIcon label="Next.js" icon={<SiNextdotjs className="text-black dark:text-white" />} />
-          <SkillIcon label="React" icon={<FaNodeJs className="text-blue-500" />} />
-          <SkillIcon label="Tailwind CSS" icon={<SiTailwindcss className="text-teal-400" />} />
-          <SkillIcon label="Sass" icon={<SiSass className="text-pink-400" />} />
-        </div>
-        <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mt-8 mb-4">Control de versiones</h3>
-        <div className="flex flex-wrap gap-4">
-          <SkillIcon label="Git" icon={<FaGitAlt className="text-orange-600" />} />
-          <SkillIcon label="GitHub" icon={<FaGithub className="text-gray-900 dark:text-white" />} />
-          <SkillIcon label="Bitbucket" icon={<FaBitbucket className="text-blue-700" />} />
-        </div>
-        <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mt-8 mb-4">Metodologías</h3>
-        <div className="flex flex-wrap gap-4">
-          <SkillIcon label="Agile (Scrum)" icon={<span className="text-lg">🌀</span>} />
-        </div>
-      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default SkillsGrid;

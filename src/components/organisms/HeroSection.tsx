@@ -4,13 +4,9 @@ import ProfileImage from '../atoms/ProfileImage';
 import SocialIcons from '../molecules/SocialIcons';
 import HeroButtons from '../molecules/HeroButtons';
 import ScrollDownIndicator from '../atoms/ScrollDownIndicator';
+import { profile } from '../../data/portfolio';
 
-const texts = [
-  'Desarrollador Full Stack',
-  'Creador de Experiencias Web',
-  'Especialista en React',
-  'Innovador Digital'
-];
+const texts = profile.titlesRotating;
 
 interface HeroSectionProps {
   scrollToExperience: () => void;
@@ -58,12 +54,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToExperience }) => {
       </div>
       <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-3xl mx-auto text-center bg-opacity-80 rounded-xl p-8">
         <div className="mb-6">
-          <ProfileImage src="/Profile.svg" alt="Sergio" />
+          <ProfileImage src={profile.profileImage} alt={profile.firstName} />
         </div>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
           Hola, soy{' '}
           <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-            Sergio!
+            {profile.firstName}!
           </span>
         </h1>
         <div className="h-10 md:h-12 mb-6">
@@ -73,7 +69,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToExperience }) => {
           </h2>
         </div>
         <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Estudiante de Ingeniería de Sistemas y <span className="text-blue-600 dark:text-blue-400 font-semibold">Desarrollador Full Stack</span> con experiencia en <span className="text-blue-600 dark:text-blue-400 font-semibold">React</span> y <span className="text-blue-600 dark:text-blue-400 font-semibold">Express</span>. Apasionado por crear soluciones escalables y eficientes, especializado en <span className="text-blue-600 dark:text-blue-400 font-semibold">APIs REST</span>, metodologías ágiles como <span className="text-blue-600 dark:text-blue-400 font-semibold">Gitflow</span> y con sólidos conocimientos en patrones de diseño.
+          {profile.description}
         </p>
         <HeroButtons />
         <SocialIcons />
