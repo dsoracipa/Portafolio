@@ -1,22 +1,18 @@
 import React from 'react';
-import { FaLightbulb, FaUsers } from 'react-icons/fa';
+import { FaUsers } from 'react-icons/fa';
 import AcademicInfoCard from '../molecules/AcademicInfoCard';
 import SkillsGrid from '../organisms/SkillsGrid';
 import SkillCategoryCard from '../molecules/SkillCategoryCard';
 import LanguagesSection from '../organisms/LanguagesSection';
+import { softSkills } from '../../data/portfolio';
 
 const Skills: React.FC = () => {
-  // Otras Skills agrupadas por categoría
+  // Soft Skills
   const otherSkills = [
-    {
-      category: 'Diseño/UI',
-      icon: FaLightbulb,
-      skills: ['Figma', 'Adobe XD']
-    },
     {
       category: 'Soft Skills',
       icon: FaUsers,
-      skills: ['Trabajo en equipo', 'Liderazgo', 'Comunicación efectiva', 'Resolución de problemas']
+      skills: softSkills
     }
   ];
 
