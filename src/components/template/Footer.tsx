@@ -1,6 +1,7 @@
 import React from 'react';
 import SocialIcons from '../molecules/SocialIcons';
 import QuickLinks from '../molecules/QuickLinks';
+import { profile } from '../../data/portfolio';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -11,10 +12,10 @@ const Footer: React.FC = () => {
           {/* Brand Section */}
           <div className="space-y-4 flex flex-col items-center text-center">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
-              Mi Portafolio
+              {profile.name}
             </h3>
             <p className="text-gray-400 leading-relaxed max-w-xs">
-              Desarrollador Full Stack apasionado por crear soluciones web innovadoras que combinan funcionalidad excepcional con diseño elegante.
+              {profile.title} especializado en desarrollo full-stack con Python y tecnologías web modernas.
             </p>
             <SocialIcons />
           </div>
@@ -30,7 +31,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 dark:border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              © {currentYear} Mi Portafolio. Sergio Ruiz
+              © {currentYear} {profile.name}
             </p>
           </div>
         </div>
