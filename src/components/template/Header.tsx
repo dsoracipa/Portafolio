@@ -29,7 +29,7 @@ const Header: React.FC = () => {
           <div className="flex-shrink-0">
             <Link
               to="/"
-              className="text-2xl font-bold text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
+              className="text-2xl font-bold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
             >
               {'</>'}
             </Link>

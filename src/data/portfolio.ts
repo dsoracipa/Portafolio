@@ -126,7 +126,7 @@ export const profile: Profile = {
 export const socialLinks: SocialLink[] = [
   {
     name: 'GitHub',
-    url: 'https://github.com/Dansora375',
+    url: 'https://github.com/dsoracipa',
     icon: 'github'
   },
   {
@@ -264,7 +264,7 @@ export const projects: Project[] = [
       'Plataforma de conexión agrícola liderada como Frontend Lead de equipo de 3 personas, con arquitectura feature-based y flujos data-heavy.',
     image: '/projects/agroconecta.png',
     technologies: ['React', 'TypeScript', 'Cypress', 'Feature-Based Architecture'],
-    githubUrl: 'https://github.com/dsoracipa/AgroConecta',
+    githubUrl: 'https://github.com/SwEng2-2025i-nutrias/Agroconecta-Front-end/tree/feature/Users-Chat',
     liveUrl: 'TBD',
     fullDescription:
       'Proyecto donde lideré el equipo de frontend (3 personas) manejando requirements, planning, documentación, delegación y delivery. Arquitectura basada en features con componentes reutilizables, implementación de flujos complejos de datos incluyendo publicación de contenido, búsqueda/filtrado, y UI de mensajería. Testing end-to-end con Cypress.',
@@ -286,7 +286,7 @@ export const projects: Project[] = [
       'Sistema de gestión y organización de repositorios de pruebas con seguimiento de resultados y análisis de cobertura.',
     image: '/projects/repotestes.png',
     technologies: ['React', 'Node.js', 'MongoDB', 'Jest', 'Testing'],
-    githubUrl: 'https://github.com/dsoracipa/RepoTestes',
+    githubUrl: 'https://github.com/SwEng2-2025i-nutrias/testing/tree/user-chat-test',
     liveUrl: 'TBD',
     fullDescription:
       'Plataforma para gestionar repositorios de pruebas y testing. Permite organizar, ejecutar y analizar resultados de pruebas de software, con dashboards de cobertura y reportes detallados. Incluye integración con frameworks de testing populares y visualización de métricas de calidad de código.',
@@ -300,6 +300,29 @@ export const projects: Project[] = [
     ],
     isDeployed: false,
     dateRange: 'TBD'
+  },
+  {
+    id: 5,
+    title: 'UN Chaza',
+    description:
+      'Visibiliza negocios informales “chazas” dentro del campus; vendedores registran productos; estudiantes consultan oferta.',
+    image: '/projects/UnChaza.png',
+    technologies: ['NestJS', 'TypeScript', 'PostgreSQL', 'TypeORM', 'Supabase', 'JWT', 'bcryptjs', 'Swagger', 'Jest', 'Supertest'],
+    githubUrl: 'https://github.com/dsoracipa/Proyecto_IngeSoft',
+    liveUrl: 'TBD',
+    fullDescription:
+      'Backend desarrollado con NestJS, TypeScript, PostgreSQL, TypeORM y Supabase. Autenticación JWT + bcryptjs, documentación con Swagger. Incluye API REST, lógica de negocio con arquitectura limpia, CRUD de usuarios y productos, pruebas unitarias/integración con Jest y Supertest.',
+    features: [
+      'Diseñé API REST + lógica de negocio con arquitectura limpia.',
+      'CRUD usuarios/productos',
+      'Pruebas unitarias e integración con Jest + Supertest',
+      'Documentación interactiva con Swagger',
+      'Autenticación JWT y cifrado de contraseñas con bcryptjs',
+      'Persistencia con PostgreSQL y TypeORM',
+      'Gestión de usuarios y productos vía Supabase'
+    ],
+    isDeployed: false,
+    dateRange: '2025'
   }
 ];
 

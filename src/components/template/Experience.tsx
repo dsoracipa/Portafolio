@@ -30,7 +30,7 @@ const About: React.FC = () => {
                   <span className="text-lg md:text-xl text-gray-500 dark:text-gray-400">
                     {exp.startDate} – {exp.isCurrent ? 'Presente' : exp.endDate}
                   </span>
-                  <h3 className="text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400 mt-2">
+                  <h3 className="text-2xl md:text-3xl font-bold text-primary-600 dark:text-primary-400 mt-2">
                     {exp.title}
                   </h3>
                   <span className="block text-xl md:text-2xl font-semibold text-gray-900 dark:text-white">
@@ -42,7 +42,7 @@ const About: React.FC = () => {
                         key={idx}
                         className="text-lg md:text-xl text-gray-700 dark:text-gray-300 flex items-start"
                       >
-                        <span className="text-blue-600 dark:text-blue-400 mr-2">•</span>
+                        <span className="text-primary-600 dark:text-primary-400 mr-2">•</span>
                         {achievement}
                       </li>
                     ))}
@@ -57,7 +57,7 @@ const About: React.FC = () => {
         {certifications.length > 0 && (
           <div>
             <CertificationsTitle />
-            <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-0 mb-8"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 mx-0 mb-8"></div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {certifications.map((cert) => (
                 <CertificationCard
