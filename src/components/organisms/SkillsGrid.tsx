@@ -16,17 +16,17 @@ const iconMap: Record<string, React.ReactElement> = {
   SiDjango: <SiDjango className="text-green-900" />,
   SiNestjs: <SiNestjs className="text-red-600" />,
   FaNodeJs: <FaNodeJs className="text-green-600" />,
-  FaPhp: <FaPhp className="text-indigo-600" />,
-  FaReact: <FaReact className="text-blue-500" />,
+  FaPhp: <FaPhp className="text-primary-700" />,
+  FaReact: <FaReact className="text-teal-500" />,
   SiJavascript: <SiJavascript className="text-yellow-400" />,
   SiTypescript: <SiTypescript className="text-blue-700" />,
-  SiVite: <SiVite className="text-purple-600" />,
+  SiVite: <SiVite className="text-secondary-600" />,
   SiTailwindcss: <SiTailwindcss className="text-teal-400" />,
   SiPostgresql: <SiPostgresql className="text-blue-600" />,
   SiMysql: <SiMysql className="text-blue-600" />,
   SiMariadb: <SiMariadb className="text-blue-800" />,
   SiMongodb: <SiMongodb className="text-green-700" />,
-  FaDocker: <FaDocker className="text-blue-500" />,
+  FaDocker: <FaDocker className="text-teal-500" />,
   SiKubernetes: <SiKubernetes className="text-blue-600" />,
   SiGooglecloud: <SiGooglecloud className="text-blue-600" />,
   SiGithubactions: <SiGithubactions className="text-gray-900 dark:text-white" />,
@@ -49,15 +49,15 @@ const SkillsGrid: React.FC = () => {
   return (
     <div className="mb-16">
       <div className="flex items-center justify-start mb-8">
-        <FaCode className="w-7 h-7 text-indigo-600 dark:text-indigo-400 mr-3" />
+        <FaCode className="w-7 h-7 text-primary-600 dark:text-primary-400 mr-3" />
         <h2 className="text-3xl md:text-3xl font-bold text-gray-900 dark:text-white">Lenguajes y Tecnología</h2>
       </div>
       <div className="grid md:grid-cols-2 gap-8">
         {/* Columna Izquierda */}
-        <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:border-indigo-400 dark:hover:border-indigo-400 hover:shadow-xl">
+        <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:border-primary-400 dark:hover:border-primary-400 hover:shadow-xl">
           {getSkillsByCategories(leftCategories).map((category, idx) => (
             <div key={idx} className={idx > 0 ? 'mt-8' : ''}>
-              <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">{category.name}</h3>
+              <h3 className="text-xl font-bold text-primary-600 dark:text-primary-400 mb-4">{category.name}</h3>
               <div className="flex flex-wrap gap-4">
                 {category.skills.map((skill, skillIdx) => (
                   <SkillIcon
@@ -76,10 +76,10 @@ const SkillsGrid: React.FC = () => {
         </div>
 
         {/* Columna Derecha */}
-        <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:border-indigo-400 dark:hover:border-indigo-400 hover:shadow-xl">
+        <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:border-primary-400 dark:hover:border-primary-400 hover:shadow-xl">
           {getSkillsByCategories(rightCategories).map((category, idx) => (
             <div key={idx} className={idx > 0 ? 'mt-8' : ''}>
-              <h3 className="text-xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">{category.name}</h3>
+              <h3 className="text-xl font-bold text-primary-600 dark:text-primary-400 mb-4">{category.name}</h3>
               <div className="flex flex-wrap gap-4">
                 {category.skills.map((skill, skillIdx) => (
                   <SkillIcon

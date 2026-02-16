@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-8 justify-center items-center">
           {/* Brand Section */}
           <div className="space-y-4 flex flex-col items-center text-center">
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">
               {profile.name}
             </h3>
             <p className="text-gray-400 leading-relaxed max-w-xs">

@@ -38,14 +38,14 @@ const CertificationCard: React.FC<CertificationCardProps> = ({ title, date, desc
           rel="noopener noreferrer"
         >
           <Button
-            className="rounded-lg font-semibold transition-transform duration-150 ease-in-out bg-indigo-600 text-white dark:bg-purple-600 dark:text-white hover:bg-indigo-700 dark:hover:bg-purple-700 transition-colors px-6 py-2 shadow-md hover:scale-105"
+            className="rounded-lg font-semibold transition-all duration-150 ease-in-out bg-primary-600 text-white dark:bg-secondary-600 dark:text-white hover:bg-primary-700 dark:hover:bg-secondary-700 px-6 py-2 shadow-md hover:scale-105"
           >
             Ver más
           </Button>
         </a>
       ) : (
         <Button
-          className="rounded-lg font-semibold transition-transform duration-150 ease-in-out bg-indigo-600 text-white dark:bg-purple-600 dark:text-white hover:bg-indigo-700 dark:hover:bg-purple-700 transition-colors px-6 py-2 shadow-md hover:scale-105"
+          className="rounded-lg font-semibold transition-all duration-150 ease-in-out bg-primary-600 text-white dark:bg-secondary-600 dark:text-white hover:bg-primary-700 dark:hover:bg-secondary-700 px-6 py-2 shadow-md hover:scale-105"
         >
           Ver más
         </Button>

@@ -16,13 +16,13 @@ const iconMap: Record<string, React.ReactNode> = {
   'TypeScript': <SiTypescript className="inline mr-1 text-blue-700" />,
   'Node.js': <FaNodeJs className="inline mr-1 text-green-600" />,
   'PostgreSQL': <SiPostgresql className="inline mr-1 text-blue-800" />,
-  'Stripe': <FaStripe className="inline mr-1 text-indigo-500" />,
+  'Stripe': <FaStripe className="inline mr-1 text-primary-500" />,
 
   'Firebase': <SiFirebase className="inline mr-1 text-yellow-500" />,
   'Socket.io': <SiSocketdotio className="inline mr-1 text-gray-700" />,
-  'PWA': <SiPwa className="inline mr-1 text-purple-500" />,
+  'PWA': <SiPwa className="inline mr-1 text-secondary-500" />,
   'Angular': <FaAngular className="inline mr-1 text-red-600" />,
-  'Strapi': <SiStrapi className="inline mr-1 text-indigo-600" />,
+  'Strapi': <SiStrapi className="inline mr-1 text-primary-600" />,
   'SQLite': <SiSqlite className="inline mr-1 text-blue-600" />,
   'MySQL': <SiMysql className="inline mr-1 text-blue-700" />,
   'Sass': <SiSass className="inline mr-1 text-pink-500" />,
@@ -45,7 +45,7 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 const TechTag: React.FC<TechTagProps> = ({ label }) => (
-  <span className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-sm font-medium rounded-full flex items-center gap-1">
+  <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-sm font-medium rounded-full flex items-center gap-1">
     {iconMap[label]}
     {label}
   </span>

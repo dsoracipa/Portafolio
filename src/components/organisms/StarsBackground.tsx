@@ -25,14 +25,14 @@ const StarsBackground: React.FC<StarsBackgroundProps> = ({ theme }) => {
     );
   }), [theme]);
 
-  const lightBg = 'radial-gradient(circle at 50% 30%, #c7d2fe 0%, #f3f4f6 60%, #e0e7ff 100%)';
-  const darkBg = 'radial-gradient(circle at 50% 30%, #312e81 0%, #1e1b4b 20%, #0a0a23 40%, #000 80%, #000 100%)';
+  const lightBg = 'radial-gradient(circle at 50% 30%, #ccfbf1 0%, #f3f4f6 60%, #f0fdfa 100%)';
+  const darkBg = 'radial-gradient(circle at 50% 30%, #134e4a 0%, #115e59 20%, #0a1a18 40%, #000 80%, #000 100%)';
 
   return (
     <div className="absolute inset-0 -z-10 pointer-events-none">
       <div className="w-full h-full" style={{ background: theme === 'dark' ? darkBg : lightBg }} />
       {stars}
-      <div className={`absolute left-1/2 top-1/3 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full blur-3xl ${theme === 'dark' ? 'bg-indigo-900 opacity-40' : 'bg-indigo-400 opacity-30'}`} />
+      <div className={`absolute left-1/2 top-1/3 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full blur-3xl ${theme === 'dark' ? 'bg-primary-900 opacity-40' : 'bg-primary-400 opacity-30'}`} />
     </div>
   );
 };
