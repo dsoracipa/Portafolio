@@ -38,14 +38,14 @@ const ContactSection: React.FC = () => {
           background: theme === 'dark' ? darkBg : lightBg
         }} />
         {stars}
-        <div className={`absolute left-1/2 top-1/3 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full blur-3xl ${theme === 'dark' ? 'bg-indigo-900 opacity-40' : 'bg-indigo-400 opacity-30'}`} />
+        <div className={`absolute left-1/2 top-1/3 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full blur-3xl ${theme === 'dark' ? 'bg-primary-900 opacity-40' : 'bg-primary-400 opacity-30'}`} />
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 mt-10">
             Contacto
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 mx-auto mb-8"></div>
         </div>
         <div className="grid lg:grid-cols-2 gap-16 flex-col-reverse lg:flex-row lg:grid lg:gap-16">
           <ContactSocialLinks />

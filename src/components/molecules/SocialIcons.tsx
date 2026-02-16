@@ -13,7 +13,7 @@ const iconComponents = {
 };
 
 const hoverColors = {
-  github: 'hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-400 dark:hover:text-gray-900',
+  github: 'hover:bg-primary-600 hover:text-white dark:hover:bg-primary-400 dark:hover:text-gray-900',
   linkedin: 'hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900',
   email: 'hover:bg-green-600 hover:text-white dark:hover:bg-green-400 dark:hover:text-gray-900',
 };

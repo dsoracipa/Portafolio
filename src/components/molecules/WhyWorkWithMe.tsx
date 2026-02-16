@@ -3,7 +3,7 @@ import { CheckCircle } from 'lucide-react';
 import { contactReasons } from '../../data/portfolio';
 
 const WhyWorkWithMe: React.FC = () => (
-  <div className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-2xl p-6">
+  <div className="bg-gradient-to-r from-primary-50 to-secondary-50 dark:from-primary-900/20 dark:to-secondary-900/20 rounded-2xl p-6">
     <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
       ¿Por qué trabajar conmigo?
     </h4>

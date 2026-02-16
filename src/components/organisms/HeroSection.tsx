@@ -47,10 +47,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToExperience }) => {
     >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-[10%] w-96 h-96 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
-        <div className="absolute top-3/4 right-1/4 w-96 h-96 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-3/4 w-96 h-96 bg-gradient-to-r from-cyan-400 to-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
-        <div className="absolute top-[14%] right-1/4 w-32 h-32 bg-gradient-to-r from-green-400 to-teal-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-3000"></div>
+        <div className="absolute top-1/4 left-[10%] w-96 h-96 bg-gradient-to-r from-primary-400 to-secondary-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+        <div className="absolute top-3/4 right-1/4 w-96 h-96 bg-gradient-to-r from-secondary-400 to-amber-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-2000"></div>
+        <div className="absolute top-1/2 left-3/4 w-96 h-96 bg-gradient-to-r from-primary-500 to-teal-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-4000"></div>
+        <div className="absolute top-[14%] right-1/4 w-32 h-32 bg-gradient-to-r from-teal-400 to-primary-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse animation-delay-3000"></div>
       </div>
       <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-3xl mx-auto text-center bg-opacity-80 rounded-xl p-8">
         <div className="mb-6">
@@ -58,7 +58,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToExperience }) => {
         </div>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
           Hola, soy{' '}
-          <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
             {profile.firstName}!
           </span>
         </h1>

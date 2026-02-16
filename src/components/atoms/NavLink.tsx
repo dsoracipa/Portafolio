@@ -26,11 +26,11 @@ const NavLink: React.FC<NavLinkProps> = ({ id, label, to, activeNav, setActiveNa
             }
           : () => setActiveNav(id)
         }
-        className={`group relative px-3 py-2 text-sm font-medium transition-all duration-200 hover:scale-105 ${activeNav === id ? 'text-indigo-600 dark:text-indigo-400 font-bold' : 'text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'}`}
+        className={`group relative px-3 py-2 text-sm font-medium transition-all duration-200 hover:scale-105 ${activeNav === id ? 'text-primary-600 dark:text-primary-400 font-bold' : 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400'}`}
       >
         {label}
         <span className="absolute left-0 bottom-0 w-full" style={{ height: '2px' }}>
-          <span className={`block h-full ${activeNav === id ? 'bg-indigo-600 dark:bg-indigo-400 scale-x-100' : 'bg-indigo-600 dark:bg-indigo-400 scale-x-0 group-hover:scale-x-100'} transition-transform duration-300 origin-left`}></span>
+          <span className={`block h-full ${activeNav === id ? 'bg-primary-600 dark:bg-primary-400 scale-x-100' : 'bg-primary-600 dark:bg-primary-400 scale-x-0 group-hover:scale-x-100'} transition-transform duration-300 origin-left`}></span>
         </span>
       </Link>
     );
@@ -60,12 +60,12 @@ const NavLink: React.FC<NavLinkProps> = ({ id, label, to, activeNav, setActiveNa
           }, 100);
         }
       }}
-      className={`group relative px-3 py-2 text-sm font-medium transition-all duration-200 hover:scale-105 bg-transparent border-none ${activeNav === id ? 'text-indigo-600 dark:text-indigo-400 font-bold' : 'text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400'}`}
+      className={`group relative px-3 py-2 text-sm font-medium transition-all duration-200 hover:scale-105 bg-transparent border-none ${activeNav === id ? 'text-primary-600 dark:text-primary-400 font-bold' : 'text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400'}`}
       style={{ cursor: 'pointer' }}
     >
       {label}
       <span className="absolute left-0 bottom-0 w-full" style={{ height: '2px' }}>
-        <span className={`block h-full ${activeNav === id ? 'bg-indigo-600 dark:bg-indigo-400 scale-x-100' : 'bg-indigo-600 dark:bg-indigo-400 scale-x-0 group-hover:scale-x-100'} transition-transform duration-300 origin-left`}></span>
+        <span className={`block h-full ${activeNav === id ? 'bg-primary-600 dark:bg-primary-400 scale-x-100' : 'bg-primary-600 dark:bg-primary-400 scale-x-0 group-hover:scale-x-100'} transition-transform duration-300 origin-left`}></span>
       </span>
     </button>
   );
