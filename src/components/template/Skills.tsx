@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUsers } from 'react-icons/fa';
+import { FaUsers, FaLightbulb } from 'react-icons/fa';
 import AcademicInfoCard from '../molecules/AcademicInfoCard';
 import SkillsGrid from '../organisms/SkillsGrid';
 import SkillCategoryCard from '../molecules/SkillCategoryCard';
@@ -17,13 +17,13 @@ const Skills: React.FC = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 bg-gradient-to-br from-white via-blue-50 to-white dark:from-black dark:via-gray-900 dark:to-black transition-all duration-700 ease-out">
+    <section id="skills" className="py-20 bg-gradient-to-br from-white via-teal-50 to-white dark:from-black dark:via-gray-900 dark:to-black transition-all duration-700 ease-out">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4 mt-10">
             Habilidades
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary-600 to-secondary-600 mx-auto mb-8"></div>
         </div>
         {/* Información Académica */}
         <AcademicInfoCard />
@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
         {/* Otras Skills */}
         <div className="mb-8">
           <div className="flex items-center mb-8">
-            <FaLightbulb className="w-8 h-8 text-purple-600 mr-3" />
+            <FaLightbulb className="w-8 h-8 text-secondary-600 mr-3" />
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Otras Skills</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">

@@ -10,7 +10,7 @@ const HeroButtons: React.FC = () => {
     <div className="flex gap-4 justify-center mb-8">
       <Button
         onClick={() => navigate('/projects')}
-        className="bg-indigo-600 text-white dark:bg-purple-600 dark:text-white hover:bg-indigo-700 dark:hover:bg-purple-700 transition-colors px-6 py-2 rounded-lg shadow-md"
+        className="bg-primary-600 text-white dark:bg-secondary-600 dark:text-white hover:bg-primary-700 dark:hover:bg-secondary-700 transition-colors px-6 py-2 rounded-lg shadow-md"
       >
         Ver Proyectos
       </Button>
