@@ -11,25 +11,23 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
-        <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-          <Header />
-          <main>
-            <Routes>
-              <Route path="/" element={
-                <>
-                  <Hero />
-                  <About />
-                </>
-              } />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </BrowserRouter>
+      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <About />
+              </>
+            } />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 }
