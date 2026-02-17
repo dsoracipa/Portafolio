@@ -219,16 +219,7 @@ export const projects: Project[] = [
     description:
       'Despliegue de microservicios cloud-native en Google Kubernetes Engine (GKE) con arquitectura escalable y containerización completa.',
     image: `${import.meta.env.BASE_URL}projects/runpath.png`,
-    technologies: [
-      'Kubernetes',
-      'Docker',
-      'GCP',
-      'GKE',
-      'Microservices',
-      { name: 'Spring Boot', iconComponent: 'SiSpringboot' },
-      { name: 'RabbitMQ', iconComponent: 'SiRabbitmq' },
-      { name: 'Nginx', iconComponent: 'SiNginx' }
-    ],
+    technologies: ['Kubernetes', 'Docker', 'GCP', 'GKE', 'Microservices'],
     githubUrl: 'https://github.com/ArquiSoft-Grupo-2B',
     liveUrl: 'TBD',
     fullDescription:
@@ -316,19 +307,7 @@ export const projects: Project[] = [
     description:
       'Visibiliza negocios informales “chazas” dentro del campus; vendedores registran productos; estudiantes consultan oferta.',
     image: `${import.meta.env.BASE_URL}projects/UnChaza.png`,
-    technologies: [
-      'NestJS',
-      'TypeScript',
-      'PostgreSQL',
-      'TypeORM',
-      'Supabase',
-      'JWT',
-      'bcryptjs',
-      'Swagger',
-      'Jest',
-      'Supertest',
-      { name: 'Bootstrap', iconComponent: 'SiBootstrap' }
-    ],
+    technologies: ['NestJS', 'TypeScript', 'PostgreSQL', 'TypeORM', 'Supabase', 'JWT', 'bcryptjs', 'Swagger', 'Jest', 'Supertest'],
     githubUrl: 'https://github.com/dsoracipa/Proyecto_IngeSoft',
     liveUrl: 'TBD',
     fullDescription:
