@@ -219,11 +219,20 @@ export const projects: Project[] = [
     description:
       'Despliegue de microservicios cloud-native en Google Kubernetes Engine (GKE) con arquitectura escalable y containerización completa.',
     image: `${import.meta.env.BASE_URL}projects/runpath.png`,
-    technologies: ['Kubernetes', 'Docker', 'GCP', 'GKE', 'Microservices'],
+    technologies: [
+      'Kubernetes',
+      'Docker',
+      'GCP',
+      'GKE',
+      'Microservices',
+      { name: 'Spring Boot', iconComponent: 'SiSpringboot' },
+      { name: 'RabbitMQ', iconComponent: 'SiRabbitmq' },
+      { name: 'Nginx', iconComponent: 'SiNginx' }
+    ],
     githubUrl: 'https://github.com/ArquiSoft-Grupo-2B',
     liveUrl: 'TBD',
     fullDescription:
-      'Proyecto de despliegue de servicios de rutas utilizando arquitectura de microservicios cloud-native. Implementación completa en Google Cloud Platform (GCP) utilizando Google Kubernetes Engine (GKE), con containerización de servicios, configuración de Deployments, Services, ConfigMaps, Secrets e Ingress para gestión de tráfico.',
+      'Proyecto de despliegue de servicios de rutas utilizando arquitectura de microservicios cloud-native. Implementación completa en Google Cloud Platform (GCP) utilizando Google Kubernetes Engine (GKE), con containerización de servicios, configuración de Deployments, Services, ConfigMaps, Secrets e Ingress para gestión de tráfico.\n\nDesarrollé el microservicio de notificaciones con Java y Spring Boot para el envío de correos electrónicos y recordatorios, consumiendo eventos desde RabbitMQ. Además, configuramos Nginx como reverse proxy, balanceador de carga y WAF para proteger y optimizar el acceso tanto web como móvil.',
     features: [
       'Arquitectura de microservicios escalable',
       'Containerización con Docker',
@@ -307,11 +316,23 @@ export const projects: Project[] = [
     description:
       'Visibiliza negocios informales “chazas” dentro del campus; vendedores registran productos; estudiantes consultan oferta.',
     image: `${import.meta.env.BASE_URL}projects/UnChaza.png`,
-    technologies: ['NestJS', 'TypeScript', 'PostgreSQL', 'TypeORM', 'Supabase', 'JWT', 'bcryptjs', 'Swagger', 'Jest', 'Supertest'],
+    technologies: [
+      'NestJS',
+      'TypeScript',
+      'PostgreSQL',
+      'TypeORM',
+      'Supabase',
+      'JWT',
+      'bcryptjs',
+      'Swagger',
+      'Jest',
+      'Supertest',
+      { name: 'Bootstrap', iconComponent: 'SiBootstrap' }
+    ],
     githubUrl: 'https://github.com/dsoracipa/Proyecto_IngeSoft',
     liveUrl: 'TBD',
     fullDescription:
-      'Backend desarrollado con NestJS, TypeScript, PostgreSQL, TypeORM y Supabase. Autenticación JWT + bcryptjs, documentación con Swagger. Incluye API REST, lógica de negocio con arquitectura limpia, CRUD de usuarios y productos, pruebas unitarias/integración con Jest y Supertest.',
+      'Backend desarrollado con NestJS, TypeScript, PostgreSQL, TypeORM y Supabase. Autenticación JWT + bcryptjs, documentación con Swagger. Incluye API REST, lógica de negocio con arquitectura limpia, CRUD de usuarios y productos, pruebas unitarias/integración con Jest y Supertest.\n\nEn el frontend utilicé Bootstrap para el diseño responsivo y componentes visuales.',
     features: [
       'Diseñé API REST + lógica de negocio con arquitectura limpia.',
       'CRUD usuarios/productos',
