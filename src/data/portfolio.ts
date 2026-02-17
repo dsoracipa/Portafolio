@@ -111,7 +111,7 @@ export const profile: Profile = {
   ],
   description:
     'Junior Software Engineer focused on shipping full-stack features with Python and modern web stacks. Experiencia práctica en sistemas en producción con React + PHP, automatización de workflows con n8n, y GitHub Actions para CI/CD.',
-  profileImage: '/Profile.png',
+  profileImage: `${import.meta.env.BASE_URL}Profile.png`,
   cvFile: '/cv.pdf', // TODO: Agregar archivo CV en public/cv.pdf
   location: 'Bogotá, Colombia',
   phone: '+57 3167940188',
@@ -218,7 +218,7 @@ export const projects: Project[] = [
     title: 'RunPath - Cloud-native Microservices',
     description:
       'Despliegue de microservicios cloud-native en Google Kubernetes Engine (GKE) con arquitectura escalable y containerización completa.',
-    image: '/projects/runpath.png',
+    image: `${import.meta.env.BASE_URL}projects/runpath.png`,
     technologies: ['Kubernetes', 'Docker', 'GCP', 'GKE', 'Microservices'],
     githubUrl: 'https://github.com/ArquiSoft-Grupo-2B',
     liveUrl: 'TBD',
@@ -240,7 +240,7 @@ export const projects: Project[] = [
     title: 'Project Management CRUD - Django + React',
     description:
       'Sistema completo de gestión de proyectos con API REST en Django y UI moderna en React, incluyendo validaciones, paginación y manejo de estados.',
-    image: '/projects/crud-django.png',
+    image: `${import.meta.env.BASE_URL}projects/crud-django.png`,
     technologies: ['Django', 'React', 'REST API', 'PostgreSQL', 'Vite'],
     githubUrl: 'https://github.com/dsoracipa/Crud_Django_React',
     liveUrl: 'TBD',
@@ -262,7 +262,7 @@ export const projects: Project[] = [
     title: 'AgroConecta',
     description:
       'Plataforma de conexión agrícola liderada como Frontend Lead de equipo de 3 personas, con arquitectura feature-based y flujos data-heavy.',
-    image: '/projects/agroconecta.png',
+    image: `${import.meta.env.BASE_URL}projects/agroconecta.png`,
     technologies: ['React', 'TypeScript', 'Cypress', 'Feature-Based Architecture'],
     githubUrl: 'https://github.com/SwEng2-2025i-nutrias/Agroconecta-Front-end/tree/feature/Users-Chat',
     liveUrl: 'TBD',
@@ -284,7 +284,7 @@ export const projects: Project[] = [
     title: 'RepoTestes - Sistema de Gestión de Pruebas',
     description:
       'Sistema de gestión y organización de repositorios de pruebas con seguimiento de resultados y análisis de cobertura.',
-    image: '/projects/repotestes.png',
+    image: `${import.meta.env.BASE_URL}projects/repotestes.png`,
     technologies: ['React', 'Node.js', 'MongoDB', 'Jest', 'Testing'],
     githubUrl: 'https://github.com/SwEng2-2025i-nutrias/testing/tree/user-chat-test',
     liveUrl: 'TBD',
@@ -306,7 +306,7 @@ export const projects: Project[] = [
     title: 'UN Chaza',
     description:
       'Visibiliza negocios informales “chazas” dentro del campus; vendedores registran productos; estudiantes consultan oferta.',
-    image: '/projects/UnChaza.png',
+    image: `${import.meta.env.BASE_URL}projects/UnChaza.png`,
     technologies: ['NestJS', 'TypeScript', 'PostgreSQL', 'TypeORM', 'Supabase', 'JWT', 'bcryptjs', 'Swagger', 'Jest', 'Supertest'],
     githubUrl: 'https://github.com/dsoracipa/Proyecto_IngeSoft',
     liveUrl: 'TBD',
