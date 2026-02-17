@@ -47,9 +47,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, index }) =>
         {project.description}
       </p>
       <div className="flex flex-wrap gap-2">
-        {project.technologies.map((tech, techIndex) => (
-          <TechTag key={techIndex} label={tech} />
-        ))}
+        {project.technologies.map((tech, techIndex) => {
+          if (typeof tech === 'string') {
+            return <TechTag key={techIndex} label={tech} />;
+          } else {
+            return <TechTag key={techIndex} label={tech.name} iconComponent={tech.iconComponent} />;
+          }
+        })}
       </div>
     </div>
   </div>

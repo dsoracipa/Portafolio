@@ -9,9 +9,14 @@ import { SiOpencv } from 'react-icons/si';
 
 interface TechTagProps {
   label: string;
+  iconComponent?: string;
 }
 
 const iconMap: Record<string, React.ReactNode> = {
+    'SiSpringboot': require('react-icons/si').SiSpringboot ? <require('react-icons/si').SiSpringboot className="inline mr-1 text-green-700" /> : null,
+    'SiRabbitmq': require('react-icons/si').SiRabbitmq ? <require('react-icons/si').SiRabbitmq className="inline mr-1 text-orange-700" /> : null,
+    'SiNginx': require('react-icons/si').SiNginx ? <require('react-icons/si').SiNginx className="inline mr-1 text-green-700" /> : null,
+    'SiBootstrap': require('react-icons/si').SiBootstrap ? <require('react-icons/si').SiBootstrap className="inline mr-1 text-purple-700" /> : null,
   'React': <FaReact className="inline mr-1 text-blue-500" />,
   'TypeScript': <SiTypescript className="inline mr-1 text-blue-700" />,
   'Node.js': <FaNodeJs className="inline mr-1 text-green-600" />,
@@ -44,9 +49,9 @@ const iconMap: Record<string, React.ReactNode> = {
   'Supabase': <SiSupabase className="inline mr-1 text-green-700" />,
 };
 
-const TechTag: React.FC<TechTagProps> = ({ label }) => (
+const TechTag: React.FC<TechTagProps> = ({ label, iconComponent }) => (
   <span className="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-sm font-medium rounded-full flex items-center gap-1">
-    {iconMap[label]}
+    {iconComponent ? iconMap[iconComponent] : iconMap[label]}
     {label}
   </span>
 );
