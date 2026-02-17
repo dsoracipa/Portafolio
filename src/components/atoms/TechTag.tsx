@@ -1,11 +1,9 @@
 
 import React from 'react';
-import { FaReact, FaNodeJs, FaStripe, FaAngular, FaPython } from 'react-icons/fa';
-import { SiTypescript, SiPostgresql, SiFirebase, SiSocketdotio, SiPwa, SiFastapi, SiOpenai, SiTailwindcss, SiPrisma, SiSupabase, SiStrapi, SiSqlite, SiMysql, SiSass, SiExpress, SiFlask, SiThreedotjs } from 'react-icons/si';
-import { FaRobot } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaStripe, FaAngular, FaPython, FaRobot } from 'react-icons/fa';
+import { SiTypescript, SiPostgresql, SiFirebase, SiSocketdotio, SiPwa, SiFastapi, SiOpenai, SiTailwindcss, SiPrisma, SiSupabase, SiStrapi, SiSqlite, SiMysql, SiSass, SiExpress, SiFlask, SiThreedotjs, SiOpencv, SiSpringboot, SiRabbitmq, SiNginx, SiBootstrap } from 'react-icons/si';
 import { BiNetworkChart } from 'react-icons/bi';
 import { TbBrandGoogle } from 'react-icons/tb';
-import { SiOpencv } from 'react-icons/si';
 
 interface TechTagProps {
   label: string;
@@ -13,10 +11,10 @@ interface TechTagProps {
 }
 
 const iconMap: Record<string, React.ReactNode> = {
-    'SiSpringboot': require('react-icons/si').SiSpringboot ? <require('react-icons/si').SiSpringboot className="inline mr-1 text-green-700" /> : null,
-    'SiRabbitmq': require('react-icons/si').SiRabbitmq ? <require('react-icons/si').SiRabbitmq className="inline mr-1 text-orange-700" /> : null,
-    'SiNginx': require('react-icons/si').SiNginx ? <require('react-icons/si').SiNginx className="inline mr-1 text-green-700" /> : null,
-    'SiBootstrap': require('react-icons/si').SiBootstrap ? <require('react-icons/si').SiBootstrap className="inline mr-1 text-purple-700" /> : null,
+  'SiSpringboot': <SiSpringboot className="inline mr-1 text-green-700" />,
+  'SiRabbitmq': <SiRabbitmq className="inline mr-1 text-orange-600" />,
+  'SiNginx': <SiNginx className="inline mr-1 text-green-700" />,
+  'SiBootstrap': <SiBootstrap className="inline mr-1 text-purple-700" />,
   'React': <FaReact className="inline mr-1 text-blue-500" />,
   'TypeScript': <SiTypescript className="inline mr-1 text-blue-700" />,
   'Node.js': <FaNodeJs className="inline mr-1 text-green-600" />,
