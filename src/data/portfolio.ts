@@ -54,7 +54,7 @@ export interface Project {
   title: string;
   description: string;
   image: string;
-  technologies: string[];
+  technologies: (string | { name: string; iconComponent: string })[];
   githubUrl: string;
   liveUrl: string;
   fullDescription: string;
@@ -220,12 +220,20 @@ export const projects: Project[] = [
       'Despliegue de microservicios cloud-native en Google Kubernetes Engine (GKE) con arquitectura escalable y containerización completa.',
     image: `${import.meta.env.BASE_URL}projects/runpath.png`,
     technologies: [
+      'React',
+      { name: 'Next.js', iconComponent: 'SiNextdotjs' },
+      'Node.js',
+      'Python',
+      { name: 'FastAPI', iconComponent: 'FastAPI' },
+      { name: 'Express', iconComponent: 'Express' },
+      { name: 'Java', iconComponent: 'FaJava' },
+      { name: 'Spring Boot', iconComponent: 'SiSpringboot' },
+      { name: 'Kotlin', iconComponent: 'SiKotlin' },
+      { name: 'RabbitMQ', iconComponent: 'SiRabbitmq' },
+      { name: 'Nginx', iconComponent: 'SiNginx' },
       'Kubernetes',
       'Docker',
-      'GCP',
-      'GKE',
-      'Microservices',
-      
+      'GCP'
     ],
     githubUrl: 'https://github.com/ArquiSoft-Grupo-2B',
     liveUrl: 'TBD',
@@ -325,7 +333,7 @@ export const projects: Project[] = [
       'Swagger',
       'Jest',
       'Supertest',
-      
+      { name: 'Bootstrap', iconComponent: 'SiBootstrap' }
     ],
     githubUrl: 'https://github.com/dsoracipa/Proyecto_IngeSoft',
     liveUrl: 'TBD',

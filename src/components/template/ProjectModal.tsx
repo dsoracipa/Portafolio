@@ -10,7 +10,7 @@ interface Project {
   title: string;
   description: string;
   image: string;
-  technologies: string[];
+  technologies: (string | { name: string; iconComponent: string })[];
   githubUrl: string;
   liveUrl: string;
   fullDescription: string;
@@ -57,9 +57,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, isDeploye
                 Tecnologías Utilizadas
               </h4>
               <div className="flex flex-wrap gap-1">
-                {project.technologies.map((tech, index) => (
-                  <TechTag key={index} label={tech} />
-                ))}
+                {project.technologies.map((tech, index) => {
+                  if (typeof tech === 'string') {
+                    return <TechTag key={index} label={tech} />;
+                  } else {
+                    return <TechTag key={index} label={tech.name} iconComponent={tech.iconComponent} />;
+                  }
+                })}
               </div>
             </div>
 

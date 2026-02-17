@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { FaReact, FaNodeJs, FaStripe, FaAngular, FaPython, FaRobot } from 'react-icons/fa';
-import { SiTypescript, SiPostgresql, SiFirebase, SiSocketdotio, SiPwa, SiFastapi, SiOpenai, SiTailwindcss, SiPrisma, SiSupabase, SiStrapi, SiSqlite, SiMysql, SiSass, SiExpress, SiFlask, SiThreedotjs, SiOpencv, SiSpringboot, SiRabbitmq, SiNginx, SiBootstrap } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaStripe, FaAngular, FaPython, FaRobot, FaJava } from 'react-icons/fa';
+import { SiTypescript, SiPostgresql, SiFirebase, SiSocketdotio, SiPwa, SiFastapi, SiOpenai, SiTailwindcss, SiPrisma, SiSupabase, SiStrapi, SiSqlite, SiMysql, SiSass, SiExpress, SiFlask, SiThreedotjs, SiOpencv, SiSpringboot, SiRabbitmq, SiNginx, SiBootstrap, SiNextdotjs, SiKotlin } from 'react-icons/si';
 import { BiNetworkChart } from 'react-icons/bi';
 import { TbBrandGoogle } from 'react-icons/tb';
 
@@ -15,6 +15,9 @@ const iconMap: Record<string, React.ReactNode> = {
   'SiRabbitmq': <SiRabbitmq className="inline mr-1 text-orange-600" />,
   'SiNginx': <SiNginx className="inline mr-1 text-green-700" />,
   'SiBootstrap': <SiBootstrap className="inline mr-1 text-purple-700" />,
+  'SiNextdotjs': <SiNextdotjs className="inline mr-1 text-black dark:text-white" />,
+  'SiKotlin': <SiKotlin className="inline mr-1 text-purple-600" />,
+  'FaJava': <FaJava className="inline mr-1 text-red-600" />,
   'React': <FaReact className="inline mr-1 text-blue-500" />,
   'TypeScript': <SiTypescript className="inline mr-1 text-blue-700" />,
   'Node.js': <FaNodeJs className="inline mr-1 text-green-600" />,
