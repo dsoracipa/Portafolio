@@ -228,7 +228,7 @@ export const projects: Project[] = [
       { name: 'Express', iconComponent: 'Express' },
       { name: 'Java', iconComponent: 'FaJava' },
       { name: 'Spring Boot', iconComponent: 'SiSpringboot' },
-      { name: 'Kotlin', iconComponent: 'SiKotlin' },
+      // ...Kotlin removido
       { name: 'RabbitMQ', iconComponent: 'SiRabbitmq' },
       { name: 'Nginx', iconComponent: 'SiNginx' },
       'Kubernetes',
