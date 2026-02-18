@@ -1,4 +1,5 @@
-# Portafolio Personal - React + TypeScript con Arquitectura Atómica
+# Portafolio Personal - Daniel Felipe Soracipa
+## Junior Software Engineer | Full Stack Developer
 
 [![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -11,7 +12,7 @@
 
 ## Descripción del Proyecto
 
-**Portafolio personal moderno** construido con **React 18 + TypeScript** y **Arquitectura Atómica**. Una aplicación web completamente responsiva que presenta mis proyectos, habilidades y experiencia profesional con un diseño elegante y animaciones fluidas.
+**Portafolio personal profesional** de **Daniel Felipe Soracipa**, Junior Software Engineer, construido con **React 18 + TypeScript** y **Arquitectura Atómica**. Una aplicación web completamente responsiva que presenta mis proyectos, habilidades y experiencia profesional en desarrollo Full Stack con un diseño elegante y animaciones fluidas.
 
 ### **Características Principales:**
 
@@ -81,12 +82,18 @@ Páginas completas que combinan organismos:
 
 ---
 
-## 🛠️ **STACK TECNOLÓGICO**
+### 🔧 **STACK TECNOLÓGICO**
 
 ### **Frontend Core**
 - **React 18.3.1** - Biblioteca de interfaz de usuario
 - **TypeScript 5.5.3** - Tipado estático para JavaScript
 - **Vite 5.4.2** - Build tool y dev server ultrarrápido
+
+### **Backend & Full Stack**
+- **Python** - Django, FastAPI
+- **Node.js** - Express, NestJS
+- **PHP** - Backend en sistemas en producción
+- **Java** - Spring Boot para microservicios
 
 ### **Routing & State**
 - **React Router DOM 7.8.2** - Enrutamiento SPA
@@ -179,10 +186,10 @@ interface ThemeContextType {
 ![Production](https://img.shields.io/badge/Status-Production_Ready-success?style=flat-square&logo=vercel&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Platform-Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
-### 🚀 **Ver Demo en Vivo**
-[![Demo](https://img.shields.io/badge/Demo-Live_Preview-brightgreen?style=for-the-badge&logo=vercel&logoColor=white)](https://portafolio-lovat-eight.vercel.app)
+### **🚀 Despliegue en GitHub Pages**
+[![Demo](https://img.shields.io/badge/Demo-Live_Preview-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://dsoracipa.github.io/Portafolio/)
 
-**🔗 URL de Producción**: [`https://portafolio-lovat-eight.vercel.app`](https://portafolio-lovat-eight.vercel.app)
+**🔗 URL de Producción**: [`https://dsoracipa.github.io/Portafolio/`](https://dsoracipa.github.io/Portafolio/)
 
 ### 🏗️ **Configuración de Despliegue**
 
@@ -206,9 +213,23 @@ interface ThemeContextType {
 
 ## 📞 **CONTACTO**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Sergio_Rodriguez-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sergio-rodriguez)
-[![GitHub](https://img.shields.io/badge/GitHub-SergioR--02-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SergioR-02)
-[![Email](https://img.shields.io/badge/Email-sergio@example.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sergio@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Daniel_Soracipa-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/daniel-soracipa-torres-042920209/)
+[![GitHub](https://img.shields.io/badge/GitHub-dsoracipa-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/dsoracipa)
+[![Email](https://img.shields.io/badge/Email-danisora375@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:danisora375@gmail.com)
+
+---
+
+## 🏫 **SOBRE MÍ**
+
+Junior Software Engineer estudiante de Ingeniería de Sistemas en la **Universidad Nacional de Colombia**. 
+
+**Experiencia en:**
+- 📦 Desarrollo Full Stack con Python (Django, FastAPI) y React
+- ⚙️ Automatización de workflows con n8n y GitHub Actions
+- 📊 Trabajo en sistemas en producción con React + PHP
+- 🐳 Despliegue de microservicios con Docker y Kubernetes en GCP
+- 📧 Desarrollo de servicios backend (Spring Boot, NestJS)
+- 💻 Mantenimiento de sistemas web (WordPress, XAMPP, MySQL)
 
 ---
 
@@ -217,8 +238,9 @@ interface ThemeContextType {
 - **React Team** por la increíble biblioteca
 - **Tailwind CSS** por el framework de estilos
 - **Vite** por la experiencia de desarrollo
-- **Vercel** por el hosting gratuito
+- **GitHub Pages** por el hosting gratuito
 - **React Icons** por la extensa librería de iconos
+- **Universidad Nacional de Colombia** por la formación académica
 
 ---
 

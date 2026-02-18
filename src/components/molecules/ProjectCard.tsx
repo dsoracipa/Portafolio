@@ -2,13 +2,14 @@ import React from 'react';
 import ExternalLinkButton from '../atoms/ExternalLinkButton';
 import GithubButton from '../atoms/GithubButton';
 import TechTag from '../atoms/TechTag';
+import ImageCarousel from '../atoms/ImageCarousel';
 
 interface ProjectCardProps {
   project: {
     id: number;
     title: string;
     description: string;
-    image: string;
+    image: string | string[];
     technologies: (string | { name: string; iconComponent: string })[];
     githubUrl: string;
     liveUrl: string;
@@ -24,11 +25,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, index }) =>
     style={{ animationDelay: `${index * 100}ms` }}
     onClick={onClick}
   >
-    <div className="relative overflow-hidden">
-      <img
-        src={project.image}
+    <div className="relative overflow-hidden h-64">
+      <ImageCarousel
+        images={project.image}
         alt={project.title}
         className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+        interval={4000}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
         <div className="absolute bottom-4 left-4 right-4 flex space-x-2">

@@ -53,7 +53,7 @@ export interface Project {
   id: number;
   title: string;
   description: string;
-  image: string;
+  image: string | string[];
   technologies: (string | { name: string; iconComponent: string })[];
   githubUrl: string;
   liveUrl: string;
@@ -218,7 +218,10 @@ export const projects: Project[] = [
     title: 'RunPath - Cloud-native Microservices',
     description:
       'Despliegue de microservicios cloud-native en Google Kubernetes Engine (GKE) con arquitectura escalable y containerización completa.',
-    image: `${import.meta.env.BASE_URL}projects/runpath.png`,
+    image: [
+      `${import.meta.env.BASE_URL}projects/runpath.png`,
+      `${import.meta.env.BASE_URL}projects/Runphat2.png`
+    ],
     technologies: [
       'React',
       { name: 'Next.js', iconComponent: 'SiNextdotjs' },
@@ -274,10 +277,44 @@ export const projects: Project[] = [
   },
   {
     id: 3,
+    title: 'Sistema Web OGA - Office of Environmental Management',
+    description:
+      'Mantenimiento y desarrollo de features para el sistema web institucional de la Oficina de Gestión Ambiental (OGA) de la Universidad Nacional de Colombia.',
+    image: `${import.meta.env.BASE_URL}projects/oga.png`,
+    technologies: [
+      'React',
+      'PHP',
+      'WordPress',
+      'MySQL',
+      { name: 'GitHub Actions', iconComponent: 'SiGithubactions' }
+    ],
+    githubUrl: 'https://github.com/dsoracipa',
+    liveUrl: 'https://ogabogota.unal.edu.co/',
+    fullDescription:
+      'Desarrollo y mantenimiento del sistema web institucional de la Oficina de Gestión Ambiental (OGA) de la Universidad Nacional de Colombia. Trabajo con acceso directo a servidor y base de datos en entorno de producción real.\n\nDesarrollo de features en React (frontend) + PHP (backend), priorizando confiabilidad y mantenibilidad. Implementación de workflow automatizado con n8n que detecta reportes nuevos, registra trazabilidad (status/fecha/actor) y envía correos a revisores y liderazgo. Automatización de despliegues con GitHub Actions, reduciendo significativamente los pasos manuales.',
+    features: [
+      'Mantenimiento y evolución de sistema en producción con acceso a servidor y BD',
+      'Desarrollo de features React (frontend) + PHP (backend)',
+      'Implementación de workflow n8n para gestión de reportes',
+      'Sistema de notificaciones automáticas por correo',
+      'Trazabilidad de reportes (status/fecha/actor)',
+      'Automatización de despliegues con GitHub Actions',
+      'Gestión de base de datos MySQL con XAMPP',
+      'WordPress como CMS del sistema institucional'
+    ],
+    isDeployed: true,
+    dateRange: 'Oct 2025 – Dec 2025'
+  },
+  {
+    id: 4,
     title: 'AgroConecta',
     description:
       'Plataforma de conexión agrícola liderada como Frontend Lead de equipo de 3 personas, con arquitectura feature-based y flujos data-heavy.',
-    image: `${import.meta.env.BASE_URL}projects/agroconecta.png`,
+    image: [
+      `${import.meta.env.BASE_URL}projects/agroconecta.png`,
+      `${import.meta.env.BASE_URL}projects/agroconecta2.png`,
+      `${import.meta.env.BASE_URL}projects/agroconecta3.png`
+    ],
     technologies: ['React', 'TypeScript', 'Cypress', 'Feature-Based Architecture'],
     githubUrl: 'https://github.com/SwEng2-2025i-nutrias/Agroconecta-Front-end/tree/feature/Users-Chat',
     liveUrl: 'TBD',
@@ -295,7 +332,7 @@ export const projects: Project[] = [
     dateRange: 'Feb 2025 – Jul 2025'
   },
   {
-    id: 4,
+    id: 5,
     title: 'RepoTestes - Sistema de Gestión de Pruebas',
     description:
       'Sistema de gestión y organización de repositorios de pruebas con seguimiento de resultados y análisis de cobertura.',
@@ -317,11 +354,14 @@ export const projects: Project[] = [
     dateRange: 'TBD'
   },
   {
-    id: 5,
+    id: 6,
     title: 'UN Chaza',
     description:
       'Visibiliza negocios informales “chazas” dentro del campus; vendedores registran productos; estudiantes consultan oferta.',
-    image: `${import.meta.env.BASE_URL}projects/UnChaza.png`,
+    image: [
+      `${import.meta.env.BASE_URL}projects/UnChaza.png`,
+      `${import.meta.env.BASE_URL}projects/UnChaza2.png`
+    ],
     technologies: [
       'NestJS',
       'TypeScript',
