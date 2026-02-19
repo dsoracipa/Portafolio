@@ -112,7 +112,7 @@ export const profile: Profile = {
   description:
     'Junior Software Engineer focused on shipping full-stack features with Python and modern web stacks. Experiencia práctica en sistemas en producción con React + PHP, automatización de workflows con n8n, y GitHub Actions para CI/CD.',
   profileImage: `${import.meta.env.BASE_URL}Profile.png`,
-  cvFile: '/cv.pdf', // TODO: Agregar archivo CV en public/cv.pdf
+  cvFile: `${import.meta.env.BASE_URL}cv.pdf`,
   location: 'Bogotá, Colombia',
   phone: '+57 3167940188',
   email: 'danisora375@gmail.com',
