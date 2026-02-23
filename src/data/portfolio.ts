@@ -215,6 +215,36 @@ export const education: Education[] = [
 export const projects: Project[] = [
   {
     id: 1,
+    title: 'Sistema Web OGA - Office of Environmental Management',
+    description:
+      'Mantenimiento y desarrollo de features para el sistema web institucional de la Oficina de Gestión Ambiental (OGA) de la Universidad Nacional de Colombia.',
+    image: `${import.meta.env.BASE_URL}projects/oga.png`,
+    technologies: [
+      'React',
+      'PHP',
+      'WordPress',
+      'MySQL',
+      { name: 'GitHub Actions', iconComponent: 'SiGithubactions' }
+    ],
+    githubUrl: 'https://github.com/dsoracipa',
+    liveUrl: 'https://ogabogota.unal.edu.co/',
+    fullDescription:
+      'Desarrollo y mantenimiento del sistema web institucional de la Oficina de Gestión Ambiental (OGA) de la Universidad Nacional de Colombia. Trabajo con acceso directo a servidor y base de datos en entorno de producción real.\n\nDesarrollo de features en React (frontend) + PHP (backend), priorizando confiabilidad y mantenibilidad. Implementación de workflow automatizado con n8n que detecta reportes nuevos, registra trazabilidad (status/fecha/actor) y envía correos a revisores y liderazgo. Automatización de despliegues con GitHub Actions, reduciendo significativamente los pasos manuales.',
+    features: [
+      'Mantenimiento y evolución de sistema en producción con acceso a servidor y BD',
+      'Desarrollo de features React (frontend) + PHP (backend)',
+      'Implementación de workflow n8n para gestión de reportes',
+      'Sistema de notificaciones automáticas por correo',
+      'Trazabilidad de reportes (status/fecha/actor)',
+      'Automatización de despliegues con GitHub Actions',
+      'Gestión de base de datos MySQL con XAMPP',
+      'WordPress como CMS del sistema institucional'
+    ],
+    isDeployed: true,
+    dateRange: 'Oct 2025 – Dec 2025'
+  },
+  {
+    id: 2,
     title: 'RunPath - Cloud-native Microservices',
     description:
       'Despliegue de microservicios cloud-native en Google Kubernetes Engine (GKE) con arquitectura escalable y containerización completa.',
@@ -254,59 +284,7 @@ export const projects: Project[] = [
     dateRange: 'Aug 2025 – Dec 2025'
   },
   {
-    id: 2,
-    title: 'Project Management CRUD - Django + React',
-    description:
-      'Sistema completo de gestión de proyectos con API REST en Django y UI moderna en React, incluyendo validaciones, paginación y manejo de estados.',
-    image: `${import.meta.env.BASE_URL}projects/crud-django.png`,
-    technologies: ['Django', 'React', 'REST API', 'PostgreSQL', 'Vite'],
-    githubUrl: 'https://github.com/dsoracipa/Crud_Django_React',
-    liveUrl: 'TBD',
-    fullDescription:
-      'Aplicación full-stack para gestión de proyectos con backend Django REST Framework y frontend React. Implementa CRUD completo con validaciones tanto en backend como frontend, paginación de resultados, manejo de estados de loading/error, y confirmaciones de usuario. Flujo end-to-end desde API hasta base de datos y UI.',
-    features: [
-      'API REST con Django REST Framework',
-      'Validaciones en backend y frontend',
-      'Paginación de resultados',
-      'UI React con manejo de loading/error',
-      'Confirmaciones de acciones críticas',
-      'Flujo E2E completo: API → BD → UI'
-    ],
-    isDeployed: false,
-    dateRange: 'Sept 2025'
-  },
-  {
     id: 3,
-    title: 'Sistema Web OGA - Office of Environmental Management',
-    description:
-      'Mantenimiento y desarrollo de features para el sistema web institucional de la Oficina de Gestión Ambiental (OGA) de la Universidad Nacional de Colombia.',
-    image: `${import.meta.env.BASE_URL}projects/oga.png`,
-    technologies: [
-      'React',
-      'PHP',
-      'WordPress',
-      'MySQL',
-      { name: 'GitHub Actions', iconComponent: 'SiGithubactions' }
-    ],
-    githubUrl: 'https://github.com/dsoracipa',
-    liveUrl: 'https://ogabogota.unal.edu.co/',
-    fullDescription:
-      'Desarrollo y mantenimiento del sistema web institucional de la Oficina de Gestión Ambiental (OGA) de la Universidad Nacional de Colombia. Trabajo con acceso directo a servidor y base de datos en entorno de producción real.\n\nDesarrollo de features en React (frontend) + PHP (backend), priorizando confiabilidad y mantenibilidad. Implementación de workflow automatizado con n8n que detecta reportes nuevos, registra trazabilidad (status/fecha/actor) y envía correos a revisores y liderazgo. Automatización de despliegues con GitHub Actions, reduciendo significativamente los pasos manuales.',
-    features: [
-      'Mantenimiento y evolución de sistema en producción con acceso a servidor y BD',
-      'Desarrollo de features React (frontend) + PHP (backend)',
-      'Implementación de workflow n8n para gestión de reportes',
-      'Sistema de notificaciones automáticas por correo',
-      'Trazabilidad de reportes (status/fecha/actor)',
-      'Automatización de despliegues con GitHub Actions',
-      'Gestión de base de datos MySQL con XAMPP',
-      'WordPress como CMS del sistema institucional'
-    ],
-    isDeployed: true,
-    dateRange: 'Oct 2025 – Dec 2025'
-  },
-  {
-    id: 4,
     title: 'AgroConecta',
     description:
       'Plataforma de conexión agrícola liderada como Frontend Lead de equipo de 3 personas, con arquitectura feature-based y flujos data-heavy.',
@@ -330,6 +308,28 @@ export const projects: Project[] = [
     ],
     isDeployed: false,
     dateRange: 'Feb 2025 – Jul 2025'
+  },
+  {
+    id: 4,
+    title: 'Project Management CRUD - Django + React',
+    description:
+      'Sistema completo de gestión de proyectos con API REST en Django y UI moderna en React, incluyendo validaciones, paginación y manejo de estados.',
+    image: `${import.meta.env.BASE_URL}projects/crud-django.png`,
+    technologies: ['Django', 'React', 'REST API', 'PostgreSQL', 'Vite'],
+    githubUrl: 'https://github.com/dsoracipa/Crud_Django_React',
+    liveUrl: 'TBD',
+    fullDescription:
+      'Aplicación full-stack para gestión de proyectos con backend Django REST Framework y frontend React. Implementa CRUD completo con validaciones tanto en backend como frontend, paginación de resultados, manejo de estados de loading/error, y confirmaciones de usuario. Flujo end-to-end desde API hasta base de datos y UI.',
+    features: [
+      'API REST con Django REST Framework',
+      'Validaciones en backend y frontend',
+      'Paginación de resultados',
+      'UI React con manejo de loading/error',
+      'Confirmaciones de acciones críticas',
+      'Flujo E2E completo: API → BD → UI'
+    ],
+    isDeployed: false,
+    dateRange: 'Sept 2025'
   },
   {
     id: 5,
